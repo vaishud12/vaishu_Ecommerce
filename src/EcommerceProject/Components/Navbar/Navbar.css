@@ -1,0 +1,85 @@
+/* Navbar styles */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  
+  z-index: 1000;
+}
+
+article {
+  height: auto;
+  width: 100%;
+  background-color: black;
+  opacity:0.9;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px;
+}
+
+/* Navigation image styles */
+.navimg {
+  margin-top: 4px;
+}
+
+/* Article image styles */
+article img {
+  max-width: 100%;
+  margin-top: 2px;
+}
+
+/* Input styles */
+input {
+  padding: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.Artbtn {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Filter button styles */
+.filterbtn {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 16px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.filterbtn:hover {
+  background-color: darkblue;
+}
+
+
+@media screen and (max-width: 600px) {
+  article {
+    flex-direction: column;
+  }
+  .Artbtn {
+    flex-direction: column;
+  }
+
+  /* Adjustments for mobile screens */
+  nav {
+    text-align: center;
+  }
+
+  .filterbtn {
+    width: 100%;
+  }
+}

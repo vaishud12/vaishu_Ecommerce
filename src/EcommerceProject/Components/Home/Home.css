@@ -1,0 +1,128 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.sect {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.addcart {
+  background-color: aquamarine;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+}
+
+.slider-item {
+  position: relative;
+  min-width: 100%;
+  height:80vh;
+  background: url("https://codewithsadee.github.io/anon-ecommerce-website/assets/images/banner-1.jpg");
+  background-position:30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 18px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black; 
+  
+  
+
+}
+
+.banner-subtitle {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size:100px;
+  opacity: 0.6;
+}
+
+.banner-img {
+  height: auto;
+  max-width: 100%;
+}
+
+.banner-title,
+.banner-text {
+  font-weight: 800;
+  color: blue;
+  font-size:35px;
+  opacity: 0.7;
+}
+
+.banner-btn {
+  background-color: #ff6f61;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.midsec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.centered-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.midsec img {
+  max-width:60%;
+  width:100%;
+  padding-bottom: 4%;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .sect {
+    
+    align-items: stretch;
+  }
+
+  .banner-img {
+    height: auto;
+    max-width: 100%;
+  }
+  
+  .banner-subtitle {
+    font-size: 24px;
+  }
+
+  .banner-title,
+  .banner-text {
+    font-size: 20px;
+  }
+  
+  .midsec img {
+    
+    height: auto;
+    padding-top: 0;
+    padding-bottom: 2%;
+  }
+}

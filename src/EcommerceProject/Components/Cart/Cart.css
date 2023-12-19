@@ -1,0 +1,67 @@
+table {
+  width:90%;
+  margin-top:10%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  table-layout:fixed;
+  font-size: 14px; /* Set a default font size */
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+th {
+  background-color: aquamarine;
+}
+
+tr:hover {
+  background-color: #f5f5f5; /* Light grey background on hover */
+}
+
+/* Responsive styles for screens under 310px */
+@media screen and (max-width: 310px) {
+  table {
+    font-size: 11px; /* Set the font-size for smaller screens */
+  }
+
+  tbody, tr, td {
+    padding: 3px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+.GooglePayButton {
+
+  width: 10px;
+  height: 40px;
+  font-size: 16px;
+  
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 600px) {
+  .GooglePayButton {
+    
+    width: 150px;
+    height: 30px;
+    font-size: 14px;
+    
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  .GooglePayButton {
+   
+    width: 180px;
+    height: 35px;
+    font-size: 15px;
+    
+  }
+}
